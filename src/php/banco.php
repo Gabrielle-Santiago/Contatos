@@ -6,6 +6,6 @@
 
     $mysqli = new mysqli($hostname, $bancoDados, $usuario, $senha);
     if ($mysqli -> connect_errno) {
-        echo "Falha ao connectar:(" . $mysqli -> connect_error . ")";
+        echo "Falha ao connectar:(" . $mysqli -> connect_errno . ")" . $mysqli -> connect_error;
     }
 ?>

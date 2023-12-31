@@ -6,6 +6,7 @@
     <title>Contatos</title>
 </head>
 <body>
+    include("banco.php");
 
     <header>
         <h1>
