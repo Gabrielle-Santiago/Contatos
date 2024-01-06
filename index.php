@@ -6,7 +6,9 @@
     <title>Contatos</title>
 </head>
 <body>
-    include("banco.php");
+    <?php 
+        include("banco.php");
+    ?>
 
     <header>
         <h1>
@@ -17,16 +19,19 @@
     <main>
         <h2>Login</h2>
 
-        <label for="">
-            <p>Nome do usuário</p>
-            <input type="text" id="usuario">
-        </label>
-        <label for="">
-            <p>Senha</p>
-            <input type="password" id="senha">
-        </label>
+        <form action="post">
+            <label for="src/php/banco.php">
+                <p>Nome do usuário</p>
+                <input type="text" id="usuario" name="nome">
+            </label>
+            
+            <label for="">
+                <p>Senha</p>
+                <input type="password" id="senha">
+            </label>
+        </form>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" src="src/php/banco.php">
         <a href="http://">Cadastrar</a>
     </main>
 </body>
